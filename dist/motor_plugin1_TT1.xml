@@ -1,0 +1,31 @@
+<!-- For each instance of a plugin a xml description file has to be provided. -->
+<plugin>
+
+	<!-- Ignore this instance completely?-->
+	<ignore>false</ignore>
+
+	<!-- Type of the plugin. -->
+	<type>Turntable</type>
+
+	<!-- The name of the instance. -->
+	<name>Arduino Turntable for HP Scan 5</name>
+	
+	<!-- [optional] Approx. time interval [ms] needed for turntable initialization -->
+	<initializationTimespan>12500</initializationTimespan>
+
+	<!-- Parameters are handed to the plugin implementation as an unmanipulated string. 
+	     port:                 Optional COM-Port. Only use it, if you want to force a specific COM-Port.
+	-->
+	<parameters></parameters>
+
+	<!-- Naming scheme for dynamic link library plugins: 'interfaceName'_'os'_'moduleName'.dll
+	     Example: motor_plugin1_64_trinamic.dll
+	     'os' can be either '64' (bit) or '32' (bit) and is selected at runtime. -->
+
+	<!-- Name of the implemented interface. -->
+	<interfaceName>motor_plugin1</interfaceName>
+
+	<!-- Identifies the specific module of the implemented interface. -->
+	<moduleName>TT1</moduleName>
+
+</plugin>
